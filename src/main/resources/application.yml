@@ -1,0 +1,17 @@
+spring.application.name : ${vcap.application.name:hello-world-service}
+
+eureka:
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
+      
+
+info:
+  app:
+    name: hello-world-service
+    description: My Hello World Service
+    version: 0.0.1
+
+    
+hello:
+  message: Hello from local config!
